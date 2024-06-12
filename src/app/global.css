@@ -1,0 +1,14 @@
+:root {
+    --color-green: #015e63;
+    --color-orange: #fd5900;
+}
+
+.box {
+    width: auto;
+    /* overflow: scroll !important; */
+}
+@media (max-width: 650px) {
+    .box {
+        width: 400px !important;
+    }
+}
