@@ -3,6 +3,12 @@ import * as React from "react";
 import { Grid, Box } from "@mui/material";
 import { DataGrid, GridColDef } from "@mui/x-data-grid";
 import BaseCard from "../shared/DashboardCard";
+import { renderStatus } from '../shared/RenderStatus'
+
+interface DataTableProps {
+  columns: GridColDef[];
+  rows: any[];
+}
 
 const columns: GridColDef[] = [
   { field: "id", headerName: "ID", width: 50 },
@@ -46,7 +52,8 @@ const columns: GridColDef[] = [
   {
     field: "status",
     headerName: "Status",
-    width: 100,
+    width: 150,
+    renderCell: renderStatus,
     editable: true,
   },
   {

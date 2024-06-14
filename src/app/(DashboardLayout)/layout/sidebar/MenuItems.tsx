@@ -1,6 +1,5 @@
 import {
-  IconBoxMultiple, IconCircleDot, IconBrandDaysCounter, IconHome, IconInfoCircle, IconLayout, IconLayoutGrid, IconPhoto, IconPoint, IconStar, IconTable, IconUser
-} from "@tabler/icons-react";
+  IconBrandDaysCounter, IconHome, IconBuildingWarehouse } from "@tabler/icons-react";
 
 import { uniqueId } from "lodash";
 
@@ -15,14 +14,14 @@ const Menuitems = [
     id: uniqueId(),
     title: "Count Session",
     icon: IconBrandDaysCounter,
-    href: "/count-session"
+    href: "/count-session",
   },
-  // {
-  //   id: uniqueId(),
-  //   title: "Buttons",
-  //   icon: IconCircleDot,
-  //   href: "/ui-components/buttons",
-  // },
+  {
+    id: uniqueId(),
+    title: "Warehouses",
+    icon: IconBuildingWarehouse,
+    href: "/warehouse",
+  },
   // {
   //   id: uniqueId(),
   //   title: "Forms",

@@ -3,12 +3,21 @@
     --color-orange: #fd5900;
 }
 
+/* body {
+    overflow-x: hidden;
+    width: 100vw;
+} */
+
 .box {
-    width: auto;
+    width: 100%;
     /* overflow: scroll !important; */
 }
 @media (max-width: 650px) {
     .box {
         width: 400px !important;
     }
+}
+
+.bg-green {
+    background: var(--color-green);
 }

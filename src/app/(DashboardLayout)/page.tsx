@@ -6,7 +6,9 @@ import SalesOverview from '@/app/(DashboardLayout)/components/dashboard/SalesOve
 import TopCard from './components/shared/TopCard';
 import RecentStockCount from './components/tables/RecentStockCount';
 
+
 const Dashboard = () => {
+
   return (
     <PageContainer title="Dashboard" description="this is Dashboard">
       <Chip label="Warehouse Manager" />
@@ -31,10 +33,14 @@ const Dashboard = () => {
           </Grid>
 
           <Grid item xs={12} md={12}>
-            <SalesOverview />
+            {/* <SalesOverview /> */}
+          </Grid>
+
+          <Grid item xs={12} md={12} lg={12}>
+            <RecentStockCount />
+            {/* <CustomDataTable columns={columns} data={data} /> */}
           </Grid>
         </Grid>
-        <RecentStockCount />
       </Box>
     </PageContainer>
   );
